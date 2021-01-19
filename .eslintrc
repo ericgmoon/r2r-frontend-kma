@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "env": {
+    "es6": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "no-plusplus": "off",
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "warn"
+  },
+  "plugins": ["prettier", "jest"]
+}
