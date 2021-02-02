@@ -3,13 +3,26 @@ import { Button as EButton, ThemeProvider } from "react-native-elements";
 import styles from "./styles";
 
 export default function Button(props) {
-  const { children, icon, iconColor, color, ...others } = props;
+  const {
+    children,
+    icon,
+    iconColor,
+    color,
+    iconLeft,
+    buttonStyle,
+    iconContainerStyle,
+    ...others
+  } = props;
 
   return (
     <ThemeProvider theme={{ colors: { primary: color || "black" } }}>
       <EButton
-        buttonStyle={styles.button}
-        iconRight
+        buttonStyle={{
+          ...styles.button,
+          ...(iconLeft ? styles.buttonIconLeft : styles.buttonIconRight),
+          ...buttonStyle,
+        }}
+        iconRight={!iconLeft}
         icon={
           icon
             ? {
@@ -20,9 +33,12 @@ export default function Button(props) {
               }
             : null
         }
-        iconContainerStyle={styles.icon}
+        iconContainerStyle={{
+          ...(iconLeft ? styles.iconLeft : styles.iconRight),
+          ...iconContainerStyle,
+        }}
         {...others}
-        title={children}
+        title={typeof children === "string" ? children.toUpperCase() : children}
       />
     </ThemeProvider>
   );
