@@ -18,19 +18,12 @@ jobs:
       - name: Merge with master
         run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin master && git merge $ORIG_BRANCH
 
-      # Install dependencies
-      - name: Install dependencies
-        run: npm install
   lint:
     name: Lint code base
     runs-on: ubuntu-latest
     needs: setup
 
     steps:
-      # Change directory
-      - name: Change directory
-        run: cd ..
-
       # Runs ESLint
       - name: Run ESLint
         run: npm run lint .
