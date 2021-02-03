@@ -19,4 +19,4 @@ jobs:
 
       # Runs ESLint
       - name: Run ESLint
-        run: eslint .
+        run: npm run lint
