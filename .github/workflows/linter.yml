@@ -17,9 +17,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Runs the Super-Linter action
+      # Runs ESLint
       - name: Run ESLint
-        uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: eslint .
