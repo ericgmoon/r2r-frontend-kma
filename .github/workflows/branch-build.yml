@@ -14,7 +14,7 @@ jobs:
 
       # Merge with master
       - name: Merge with master
-        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master && git merge $ORIG_BRANCH
+        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin/master && git merge $ORIG_BRANCH
 
       # Install dependencies
       - name: Install dependencies
