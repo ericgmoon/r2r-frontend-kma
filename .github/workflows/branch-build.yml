@@ -1,4 +1,4 @@
-name: Linter
+name: Branch Build
 
 # Run this workflow every time a new commit pushed to your repository
 on: push
@@ -16,6 +16,10 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
 
       # Runs ESLint
       - name: Run ESLint
