@@ -17,6 +17,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      # Merge with master
+      - name: Merge with master
+        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master && git merge $ORIG_BRANCH
+
       # Install dependencies
       - name: Install dependencies
         run: npm install
