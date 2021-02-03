@@ -10,7 +10,11 @@ export default {
     fontSize: 20,
   },
   children: {
-    marginTop: 12,
-    marginBottom: 12,
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  button: {
+    alignItems: "center",
+    justifyContent: "center",
   },
 };
