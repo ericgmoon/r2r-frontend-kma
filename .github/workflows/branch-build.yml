@@ -21,6 +21,10 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: npm install
+
+      # Change directory
+      - name: Change directory
+        run: cd ..
   lint:
     name: Lint code base
     runs-on: ubuntu-latest
@@ -30,7 +34,6 @@ jobs:
       # Runs ESLint
       - name: Run ESLint
         run: npm run lint .
-        working-directory: .
   test:
     name: Run unit tests
     runs-on: ubuntu-latest
@@ -40,4 +43,3 @@ jobs:
       # Runs unit tests
       - name: Run unit tests
         run: npm test
-        working-directory: .
