@@ -12,7 +12,6 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
       # Runs ESLint
       - name: Run ESLint
         run: npm run lint .
@@ -24,7 +23,6 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
       # Runs unit tests
       - name: Run unit tests
         run: npm test
