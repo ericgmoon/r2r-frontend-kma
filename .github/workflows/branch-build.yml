@@ -4,16 +4,18 @@ name: Branch Build
 on: push
 
 jobs:
-  lint:
+  lint:--passWithNoTests
     name: Lint code base
     runs-on: ubuntu-latest
-
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      # Merge with master
+      - name: Merge with master
+        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin master && git merge $ORIG_BRANCH
       # Install dependencies
       - name: Install dependencies
         run: npm install
@@ -23,13 +25,15 @@ jobs:
   test:
     name: Run unit tests
     runs-on: ubuntu-latest
-
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      # Merge with master
+      - name: Merge with master
+        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin master && git merge $ORIG_BRANCH
       # Install dependencies
       - name: Install dependencies
         run: npm install
