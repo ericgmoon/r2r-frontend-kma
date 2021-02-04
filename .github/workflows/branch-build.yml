@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
       # Merge with master
       - name: Merge with master
-        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); if [ $ORIG_BRANCH != "master" ]; then git checkout -b master; fi; git pull origin master && git merge $ORIG_BRANCH
+        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); (git checkout master || git checkout -b master) && git pull origin master && git merge $ORIG_BRANCH
       # Cache node_modules and refresh the cache only when package-lock.son changes
       - name: Cache node_modules
         uses: actions/cache@v2
@@ -44,7 +44,7 @@ jobs:
           fetch-depth: 0
       # Merge with master
       - name: Merge with master
-        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); if [ $ORIG_BRANCH != "master" ]; then git checkout -b master; fi; git pull origin master && git merge $ORIG_BRANCH
+        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); (git checkout master || git checkout -b master) && git pull origin master && git merge $ORIG_BRANCH
       # Install dependencies
       - name: Install dependencies
         run: npm install
@@ -63,7 +63,7 @@ jobs:
           fetch-depth: 0
       # Merge with master
       - name: Merge with master
-        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); if [ $ORIG_BRANCH != "master" ]; then git checkout -b master; fi; git pull origin master && git merge $ORIG_BRANCH
+        run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); (git checkout master || git checkout -b master) && git pull origin master && git merge $ORIG_BRANCH
       # Install dependencies
       - name: Install dependencies
         run: npm install
