@@ -1,17 +1,18 @@
-export default {
-    input: {
-      borderRadius: 32,
-      paddingLeft: 20,
-      paddingRight: 20,
-      paddingTop: 12,
-      paddingBottom: 12,
-    },
-    icon: {
-      paddingLeft: 16,
-    },
-    container: {
-        borderColor: "#000",
-        color: "#000"
-    }
-  };
-  
+export const inputStyle = {
+  borderRadius: '11px', 
+  padding: '12px',
+}
+
+export const iconStyle = { 
+  paddingLeft: '16px',
+}
+
+export const containerStyle = { 
+    borderColor: "#000",
+    color: "#000"
+}
+
+export const labelStyle = { 
+  paddingBottom: '4px',
+  fontSize: '14px',
+}
