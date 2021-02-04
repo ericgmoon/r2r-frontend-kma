@@ -11,6 +11,7 @@
     "no-plusplus": "off",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/prop-types": "warn"
   },
   "plugins": ["prettier", "jest"]
