@@ -3,15 +3,15 @@ export default {
     borderRadius: 36,
     paddingTop: 16,
     paddingBottom: 16,
-    paddingLeft: 12,
-    paddingRight: 12,
+    paddingLeft: 20,
+    paddingRight: 20,
     background: "#000",
   },
   buttonIconRight: {
-    paddingLeft: 20,
+    paddingRight: 12,
   },
   buttonIconLeft: {
-    paddingRight: 20,
+    paddingLeft: 12,
   },
   iconRight: {
     marginLeft: 16,
