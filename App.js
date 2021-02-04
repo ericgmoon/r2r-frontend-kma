@@ -1,5 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import Button from "./src/packages/common/button"
+import Input from "./src/packages/common/input"
 
 const styles = StyleSheet.create({
   container: {
