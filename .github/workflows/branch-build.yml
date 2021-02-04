@@ -29,11 +29,6 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      # Install node
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
       # Install dependencies
       - name: Install dependencies
         run: npm install
@@ -50,11 +45,6 @@ jobs:
       # Merge with master
       - name: Merge with master
         run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin master && git merge $ORIG_BRANCH
-      # Install node
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
       # Install dependencies
       - name: Install dependencies
         run: npm install
@@ -74,11 +64,6 @@ jobs:
       # Merge with master
       - name: Merge with master
         run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin master && git merge $ORIG_BRANCH
-      # Install node
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
       # Install dependencies
       - name: Install dependencies
         run: npm install
