@@ -13,7 +13,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - run: node --version
       # Merge with master
       - name: Merge with master
         run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin master && git merge $ORIG_BRANCH
