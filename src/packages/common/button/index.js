@@ -14,7 +14,7 @@ export default function Button(props) {
     ...others
   } = props;
 
-  const getOverrideIconStyle = () => {
+  const getIconStyle = () => {
     if (icon) return iconLeft ? styles.buttonIconLeft : styles.buttonIconRight;
     return null;
   };
@@ -24,7 +24,7 @@ export default function Button(props) {
       <EButton
         buttonStyle={{
           ...styles.button,
-          ...getOverrideIconStyle(),
+          ...getIconStyle(),
           ...buttonStyle,
         }}
         iconRight={!iconLeft}
