@@ -29,6 +29,9 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+      # Install node
+      - name: Install node
+        run: nvm install
       # Install dependencies
       - name: Install dependencies
         run: npm install
@@ -45,6 +48,9 @@ jobs:
       # Merge with master
       - name: Merge with master
         run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin master && git merge $ORIG_BRANCH
+      # Install node
+      - name: Install node
+        run: nvm install
       # Install dependencies
       - name: Install dependencies
         run: npm install
@@ -64,6 +70,9 @@ jobs:
       # Merge with master
       - name: Merge with master
         run: ORIG_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout -b master && git pull origin master && git merge $ORIG_BRANCH
+      # Install node
+      - name: Install node
+        run: nvm install
       # Install dependencies
       - name: Install dependencies
         run: npm install
