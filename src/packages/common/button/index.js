@@ -14,12 +14,17 @@ export default function Button(props) {
     ...others
   } = props;
 
+  const getOverrideIconStyle = () => {
+    if (icon) return iconLeft ? styles.buttonIconLeft : styles.buttonIconRight;
+    return null;
+  };
+
   return (
     <ThemeProvider theme={{ colors: { primary: color || "black" } }}>
       <EButton
         buttonStyle={{
           ...styles.button,
-          ...(iconLeft ? styles.buttonIconLeft : styles.buttonIconRight),
+          ...getOverrideIconStyle(),
           ...buttonStyle,
         }}
         iconRight={!iconLeft}
