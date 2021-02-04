@@ -5,6 +5,17 @@ export default {
     background: "#fafafa",
     width: "80%",
   },
+  flexContainer: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  flexTitleContainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 20,
+    height: 25,
+  },
   title: {
     fontWeight: "bold",
     fontSize: 20,

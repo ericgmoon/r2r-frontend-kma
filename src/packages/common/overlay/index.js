@@ -22,28 +22,15 @@ export default function Overlay(props) {
   return (
     <ThemeProvider>
       <EOverlay isVisible={true} overlayStyle={styles.overlay} {...others}>
-        <View
-          style={{
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <View
-            style={{
-              flex: 1,
-              flexDirection: "row",
-              justifyContent: "space-between",
-              marginBottom: 20,
-              height: 25,
-            }}
-          >
+        <View style={styles.flexContainer}>
+          <View style={styles.flexTitleContainer}>
             <View>
               {title ? <Text style={styles.title}>{title}</Text> : null}
             </View>
             <View style={{ height: 15, width: 25 }}>
-              {close ? null : (
+              {close ? (
                 <Icon name="clear" color="black" onPress={onClosePress} />
-              )}
+              ) : null}
             </View>
           </View>
 
