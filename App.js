@@ -8,10 +8,14 @@ export default function App() {
     <View style={styles.container}>
       <Text>If you can see this text, the app is working!</Text>
       <Button/>
+
+      <View style={{maxWidth: '90%'}}> 
       <Input
         placeholder="Hello"
         label="Input here!"
       />
+      </View>
+      
     </View>
   );
 }
@@ -24,11 +28,3 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>If you can see this text, the app is working!</Text>
-    </View>
-  );
-}
