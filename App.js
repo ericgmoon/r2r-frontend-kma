@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import Navigation from './src/packages/navigation'
-
+import Navigation from "./src/packages/navigation";
 
 const styles = StyleSheet.create({
   container: {
@@ -14,24 +13,24 @@ const styles = StyleSheet.create({
 
 const example = [
   {
-    label: 'Hair',
-    value: 'hair',
-    active: true
+    label: "Hair",
+    value: "hair",
+    active: true,
   },
   {
-    label: 'Skin',
-    value: 'skin'
+    label: "Skin",
+    value: "skin",
   },
   {
-    label: 'Clothes',
-    value: 'clothes'
+    label: "Clothes",
+    value: "clothes",
   },
-]
+];
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Navigation items={example} current='skin' />
+      <Navigation items={example} current="skin" />
       <Text>If you can see this text, the app is working!</Text>
     </View>
   );
