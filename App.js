@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Navigation from './src/packages/navigation'
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -30,7 +31,7 @@ const example = [
 export default function App() {
   return (
     <View style={styles.container}>
-      <Navigation items={example} />
+      <Navigation items={example} current='skin' />
       <Text>If you can see this text, the app is working!</Text>
     </View>
   );
