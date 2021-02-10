@@ -1,4 +1,4 @@
 export const Direction = {
-    HORIZONTAL: 'row',
-    VERTICAL: 'column'
-}
+  HORIZONTAL: "row",
+  VERTICAL: "column",
+};

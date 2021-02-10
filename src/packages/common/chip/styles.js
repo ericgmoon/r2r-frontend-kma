@@ -5,7 +5,7 @@ export default {
     paddingBottom: 8,
     paddingLeft: 12,
     paddingRight: 12,
-    textTransform: 'uppercase'
+    textTransform: "uppercase",
   },
   buttonTitle: {
     fontSize: 12,
