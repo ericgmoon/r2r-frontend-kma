@@ -19,7 +19,7 @@ export default function Navigation({ items, current, direction = "row" }) {
         <Chip
           label={item.label}
           value={item.value}
-          style={{ margin: 4 }}
+          style={styles.chip}
           active={current === item.value}
         />
       ))}
