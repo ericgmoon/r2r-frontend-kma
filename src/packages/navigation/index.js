@@ -1,11 +1,12 @@
 import React from "react";
 import { View } from "react-native";
+import styles from "./styles";
 
 import Chip from "../common/chip";
 
 export default function Navigation({ items, current, direction = "row" }) {
   return (
-    <View style={{ display: "flex", flexDirection: direction, padding: 8 }}>
+    <View style={{ ...styles.container, ...{ flexDirection: direction } }}>
       {items.map((item) => (
         <Chip
           label={item.label}

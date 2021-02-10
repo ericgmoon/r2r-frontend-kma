@@ -2,7 +2,7 @@ import React from "react";
 import { Button, ThemeProvider } from "react-native-elements";
 import styles from "./styles";
 
-export default function Chip({ label, value, active, ...rest }) {
+export default function Chip({ label, value, active, ...others }) {
   return (
     <ThemeProvider
       theme={{
@@ -17,7 +17,7 @@ export default function Chip({ label, value, active, ...rest }) {
           color: active ? "white" : "black",
         }}
         iconRight
-        {...rest}
+        {...others}
         title={label}
       />
     </ThemeProvider>
