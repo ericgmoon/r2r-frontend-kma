@@ -6,7 +6,15 @@ import Chip from "../common/chip";
 
 export default function Navigation({ items, current, direction = "row" }) {
   return (
-    <View style={{ ...styles.container, ...{ flexDirection: direction } }}>
+    <View
+      style={{
+        ...styles.container,
+        ...{
+          flexDirection: direction,
+          alignItems: direction === "column" ? "flex-start" : null,
+        },
+      }}
+    >
       {items.map((item) => (
         <Chip
           label={item.label}
