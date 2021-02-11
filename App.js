@@ -1,5 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import Overlay from "./src/packages/common/overlay";
+import Button from "./src/packages/common/button";
 
 const styles = StyleSheet.create({
   container: {
@@ -13,7 +15,9 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>If you can see this text, the app is working!</Text>
+      <Overlay>
+        <Button>Press Me</Button>
+      </Overlay>
     </View>
   );
 }
