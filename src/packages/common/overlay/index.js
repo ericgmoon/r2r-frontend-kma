@@ -33,7 +33,6 @@ export default function Overlay(props) {
             ) : null}
           </View>
         </View>
-
         <View style={styles.children}>{children}</View>
         <View style={styles.button}>
           {button ? <Button {...buttonProps}>{button}</Button> : null}
