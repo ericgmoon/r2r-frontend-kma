@@ -24,7 +24,12 @@ export default function Overlay(props) {
           </View>
           <View style={styles.iconContainer}>
             {isCloseIconVisible ? (
-              <Icon name="clear" color="black" onPress={onClosePress} />
+              <Icon
+                name="clear"
+                color="black"
+                onPress={onClosePress}
+                type="material"
+              />
             ) : null}
           </View>
         </View>

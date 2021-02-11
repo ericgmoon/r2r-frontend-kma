@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import EButton from "react-native-elements";
 import Overlay from "./src/packages/common/overlay";
 import Button from "./src/packages/common/button";
 
@@ -15,8 +16,8 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <View style={styles.container}>
-      <Overlay>
-        <Button>Press Me</Button>
+      <Overlay title="Title" button="Button" isCloseIconVisible>
+        <Text>Lorem Ipsum Dolor Sit Amet</Text>
       </Overlay>
     </View>
   );
