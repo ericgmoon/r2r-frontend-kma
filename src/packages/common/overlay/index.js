@@ -1,10 +1,14 @@
 import React from "react";
 import { Text, View } from "react-native";
+<<<<<<< Updated upstream
 import {
   Overlay as EOverlay,
   ThemeProvider,
   Icon,
 } from "react-native-elements";
+=======
+import { Overlay as EOverlay, ThemeProvider } from "react-native-elements";
+>>>>>>> Stashed changes
 import Button from "../button";
 import styles from "./styles";
 
@@ -20,14 +24,13 @@ export default function Overlay(props) {
   } = props;
 
   return (
-    <ThemeProvider>
       <EOverlay isVisible={true} overlayStyle={styles.overlay} {...others}>
         <View style={styles.flexContainer}>
           <View style={styles.flexTitleContainer}>
             <View>
               {title ? <Text style={styles.title}>{title}</Text> : null}
             </View>
-            <View style={{ height: 15, width: 25 }}>
+            <View style={styles.iconContainer}>
               {close ? (
                 <Icon name="clear" color="black" onPress={onClosePress} />
               ) : null}
@@ -40,6 +43,5 @@ export default function Overlay(props) {
           </View>
         </View>
       </EOverlay>
-    </ThemeProvider>
   );
 }
