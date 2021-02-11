@@ -16,7 +16,7 @@ export default function Overlay(props) {
   } = props;
 
   return (
-    <EOverlay isVisible overlayStyle={styles.overlay} {...others}>
+    <EOverlay overlayStyle={styles.overlay} {...others}>
       <View style={styles.flexContainer}>
         <View style={styles.flexTitleContainer}>
           <View>

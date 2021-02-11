@@ -29,7 +29,8 @@
     "react-native-vector-icons": "^8.0.0",
     "react-native-web": "^0.0.25",
     "react-test-renderer": "^16.13.1",
-    "sinon": "^9.2.4"
+    "sinon": "^9.2.4",
+    "watchman": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",

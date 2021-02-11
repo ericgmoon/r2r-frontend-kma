@@ -9,7 +9,12 @@ import Button from "../button";
 test("should trigger onClosePress", () => {
   const callback = sinon.spy();
   const node = shallow(
-    <Overlay className="overlay" isCloseIconVisible onClosePress={callback}>
+    <Overlay
+      className="overlay"
+      isVisible
+      isCloseIconVisible
+      onClosePress={callback}
+    >
       button
     </Overlay>
   );
@@ -23,6 +28,7 @@ test("should trigger onPress for main button", () => {
   const node = shallow(
     <Overlay
       className="overlay"
+      isVisible
       button="Press Me"
       buttonProps={{ onPress: callback }}
     >
@@ -36,34 +42,38 @@ test("should trigger onPress for main button", () => {
 
 describe("renders correctly", () => {
   test("without props", () => {
-    const node = renderer.create(<Overlay />).toJSON();
+    const node = renderer.create(<Overlay isVisible />).toJSON();
     expect(node).toMatchSnapshot();
   });
 
   test("with title", () => {
-    const node = renderer.create(<Overlay title="Title" />).toJSON();
+    const node = renderer.create(<Overlay isVisible title="Title" />).toJSON();
     expect(node).toMatchSnapshot();
   });
 
   test("with close icon", () => {
-    const node = renderer.create(<Overlay isCloseIconVisible />).toJSON();
+    const node = renderer
+      .create(<Overlay isVisible isCloseIconVisible />)
+      .toJSON();
     expect(node).toMatchSnapshot();
   });
 
   test("with custom button", () => {
-    const node = renderer.create(<Overlay button="Press Me" />).toJSON();
+    const node = renderer
+      .create(<Overlay isVisible button="Press Me" />)
+      .toJSON();
     expect(node).toMatchSnapshot();
   });
 
   test("with text", () => {
-    const node = renderer.create(<Overlay>Button</Overlay>).toJSON();
+    const node = renderer.create(<Overlay isVisible>Button</Overlay>).toJSON();
     expect(node).toMatchSnapshot();
   });
 
   test("with button as child", () => {
     const node = renderer
       .create(
-        <Overlay>
+        <Overlay isVisible>
           <Button>Press Me</Button>
         </Overlay>
       )
