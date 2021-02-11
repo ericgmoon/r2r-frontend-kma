@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Overlay from "./src/packages/common/overlay";
 import Button from "./src/packages/common/button";
 
