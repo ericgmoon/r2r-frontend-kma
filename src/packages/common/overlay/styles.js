@@ -28,4 +28,8 @@ export default {
     alignItems: "center",
     justifyContent: "center",
   },
+  iconContainer: {
+    height: 15,
+    width: 25,
+  },
 };
