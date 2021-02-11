@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styles from "./styles";
 
-import Chip from "../common/chip";
+import Chip from "../chip";
 
 export default function Navigation({ items, current, direction = "row" }) {
   return (
