@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { Overlay as EOverlay, Icon } from "react-native-elements";
-import Button from "../button";
+import { Button } from "@r2r/common";
 import styles from "./styles";
 
 export default function Overlay(props) {
