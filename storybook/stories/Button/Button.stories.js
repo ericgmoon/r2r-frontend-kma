@@ -8,9 +8,5 @@ import CenterView from "../CenterView";
 
 storiesOf("Button", module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
-  .add("with text", () => (
-    <Button onPress={action("clicked-text")}>I am a button</Button>
-  ))
-  .add("with some emoji", () => (
-    <Button onPress={action("clicked-emoji")}>😀 😎 👍 💯</Button>
-  ));
+  .add("with text", () => <Button>I am a button</Button>)
+  .add("with some emoji", () => <Button>😀 😎 👍 💯</Button>);
