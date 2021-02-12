@@ -22,7 +22,10 @@ configure(() => {
   loadStories();
 }, module);
 
-const StorybookUIRoot = getStorybookUI();
+const StorybookUIRoot = getStorybookUI({
+  asyncStorage:
+    require("react-native-async-storage/async-storage").AsyncStorage || null,
+});
 
 // If you are using React Native vanilla and after installation you don't see your app name here, write it manually.
 // If you use Expo you should remove this line.

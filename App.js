@@ -1,4 +1,4 @@
-import StorybookUIRoot from "../src/storybook";
+import StorybookUIRoot from "./storybook";
 
 export { StorybookUIRoot as default };
 // import React from "react";

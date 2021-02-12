@@ -14,12 +14,15 @@
   },
   "config": {
     "react-native-storybook-loader": {
-      "searchDir": ["./src/components"],
+      "searchDir": [
+        "./src/components"
+      ],
       "pattern": "**/*.stories.js",
-      "outputFile": "./src/storybook/storyLoader.js"
+      "outputFile": "./storybook/storyLoader.js"
     }
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "github:react-native-async-storage/async-storage",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-knobs": "^5.3.21",
     "@storybook/addon-links": "^5.3.21",
