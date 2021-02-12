@@ -9,7 +9,7 @@ export default {
   },
   buttonTitle: {
     fontSize: 12,
-    fontWeight: 700,
+    fontWeight: "700",
   },
   icon: {
     paddingLeft: 16,

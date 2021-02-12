@@ -8,14 +8,20 @@ import {
   addDecorator,
 } from "@storybook/react-native";
 import { withKnobs } from "@storybook/addon-knobs";
-import { loadStories } from "./storyLoader";
 
+import requireContext from "require-context.macro";
 import "./rn-addons";
 import styles from "./styles";
 
+import { loadStories } from "./storyLoader";
+
 // enables knobs for all stories
 addDecorator(withKnobs);
-addDecorator((story) => <View style={styles.main}>{story()}</View>);
+addDecorator((Story) => (
+  <View style={styles.main}>
+    <Story />
+  </View>
+));
 
 // import stories
 configure(() => {
@@ -23,8 +29,7 @@ configure(() => {
 }, module);
 
 const StorybookUIRoot = getStorybookUI({
-  asyncStorage:
-    require("react-native-async-storage/async-storage").AsyncStorage || null,
+  asyncStorage: null,
 });
 
 // If you are using React Native vanilla and after installation you don't see your app name here, write it manually.

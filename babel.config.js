@@ -5,6 +5,7 @@ module.exports = (api) => {
     presets: ["babel-preset-expo"],
     plugins: [
       "@babel/plugin-transform-react-jsx-source",
+      "macros",
       // "@babel/plugin-proposal-class-properties",
       [
         "module-resolver",

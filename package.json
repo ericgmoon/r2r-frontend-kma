@@ -10,19 +10,17 @@
     "lint": "eslint",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
-    "prestorybook": "rnstl"
+    "prestorybook": "rnstl",
+    "prestart": "rnstl"
   },
   "config": {
     "react-native-storybook-loader": {
-      "searchDir": [
-        "./src/components"
-      ],
+      "searchDir": ["./src/components"],
       "pattern": "**/*.stories.js",
       "outputFile": "./storybook/storyLoader.js"
     }
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.13.4",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-knobs": "^5.3.21",
     "@storybook/addon-links": "^5.3.21",
@@ -30,6 +28,7 @@
     "@storybook/addon-ondevice-knobs": "^5.3.23",
     "@storybook/react-native": "^5.3.23",
     "@storybook/react-native-server": "^5.3.23",
+    "babel-plugin-macros": "^2.8.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
@@ -49,10 +48,10 @@
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
     "react-native-elements": "^3.1.0",
-    "react-native-storybook-loader": "^2.0.2",
     "react-native-vector-icons": "^8.0.0",
     "react-native-web": "~0.13.12",
     "react-test-renderer": "^16.13.1",
+    "require-context.macro": "^1.2.2",
     "sinon": "^9.2.4"
   },
   "devDependencies": {
@@ -65,7 +64,8 @@
     "babel-preset-expo": "8.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0"
+    "eslint-plugin-react": "^7.22.0",
+    "react-native-storybook-loader": "^2.0.2"
   },
   "private": true,
   "jest": {

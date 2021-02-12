@@ -5,9 +5,15 @@
 
 function loadStories() {
   require("../src/components/common/button/Button.stories");
+  require("../src/components/common/chip/Chip.stories");
+  require("../src/components/common/navigation/Navigation.stories");
 }
 
-const stories = ["../src/components/common/button/Button.stories"];
+const stories = [
+  "../src/components/common/button/Button.stories",
+  "../src/components/common/chip/Chip.stories",
+  "../src/components/common/navigation/Navigation.stories",
+];
 
 module.exports = {
   loadStories,
