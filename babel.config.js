@@ -5,7 +5,12 @@ module.exports = (api) => {
     presets: ["babel-preset-expo"],
     plugins: [
       "@babel/plugin-transform-react-jsx-source",
-      "transform-inline-environment-variables",
+      [
+        "transform-inline-environment-variables",
+        {
+          include: ["REACT_NATIVE_STORYBOOK"],
+        },
+      ],
       "macros",
       // Leaving "@babel/plugin-proposal-class-properties" out as it causes errors in Expo
       [
