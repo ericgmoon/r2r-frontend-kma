@@ -8,10 +8,7 @@
     "eject": "expo eject",
     "test": "jest --passWithNoTests",
     "lint": "eslint",
-    "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook",
-    "prestorybook": "rnstl",
-    "prestart": "rnstl"
+    "storybook": "export REACT_NATIVE_STORYBOOK=true && npm start"
   },
   "config": {
     "react-native-storybook-loader": {
@@ -63,6 +60,7 @@
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "babel-preset-expo": "8.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
