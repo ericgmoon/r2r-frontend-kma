@@ -28,5 +28,6 @@
         ]
       }
     }
-  }
+  },
+  "ignorePatterns": ["storybook/**"]
 }
