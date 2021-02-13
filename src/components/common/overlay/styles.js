@@ -2,7 +2,7 @@ export default {
   overlay: {
     borderRadius: 20,
     padding: 20,
-    background: "#fafafa",
+    backgroundColor: "#fafafa",
     width: "80%",
   },
   flexContainer: {
