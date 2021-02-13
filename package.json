@@ -7,9 +7,27 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest --passWithNoTests",
-    "lint": "eslint"
+    "lint": "eslint",
+    "storybook": "export REACT_NATIVE_STORYBOOK=true && npm start"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   },
   "dependencies": {
+    "@storybook/addon-actions": "^5.3.21",
+    "@storybook/addon-knobs": "^5.3.21",
+    "@storybook/addon-links": "^5.3.21",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.23",
+    "@storybook/react-native": "^5.3.23",
+    "@storybook/react-native-server": "^5.3.23",
+    "babel-plugin-macros": "^2.8.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
@@ -32,16 +50,22 @@
     "react-native-vector-icons": "^8.0.0",
     "react-native-web": "~0.13.12",
     "react-test-renderer": "^16.13.1",
+    "require-context.macro": "^1.2.2",
     "sinon": "^9.2.4"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@babel/plugin-transform-react-jsx-source": "^7.2.0",
     "@babel/preset-env": "^7.12.13",
     "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "babel-preset-expo": "8.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0"
+    "eslint-plugin-react": "^7.22.0",
+    "react-native-storybook-loader": "^2.0.2"
   },
   "private": true,
   "jest": {

@@ -4,7 +4,10 @@ module.exports = (api) => {
     // Leaving "@babel/preset-env" out as it causes errors in Expo
     presets: ["babel-preset-expo"],
     plugins: [
-      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-react-jsx-source",
+      "transform-inline-environment-variables",
+      "macros",
+      // Leaving "@babel/plugin-proposal-class-properties" out as it causes errors in Expo
       [
         "module-resolver",
         {
