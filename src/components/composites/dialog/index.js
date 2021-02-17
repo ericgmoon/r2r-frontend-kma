@@ -18,8 +18,6 @@ export default function Dialog(props) {
   const onNextPress = () => {
     if (index + 1 < truncatedData.length) setIndex(index + 1);
     else {
-      // TODO: Remove setIndex(0)
-      setIndex(0);
       onDialogFinish();
     }
   };
