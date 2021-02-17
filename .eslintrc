@@ -14,5 +14,20 @@
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "warn"
   },
-  "plugins": ["prettier", "jest"]
+  "plugins": ["prettier", "jest", "import"],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"],
+        "map": [
+          ["@r2r/assets", "./src/assets"],
+          ["@r2r/components", "./src/components"],
+          ["@r2r/common", "./src/components/common"],
+          ["@r2r/composites", "./src/components/composites"],
+          ["@r2r/scenes", "./src/scenes"]
+        ]
+      }
+    }
+  },
+  "ignorePatterns": ["storybook/**"]
 }
