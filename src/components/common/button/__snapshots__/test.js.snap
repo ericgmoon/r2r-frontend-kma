@@ -45,9 +45,10 @@ exports[`renders correctly with custom styles 1`] = `
           "justifyContent": "center",
           "padding": 8,
           "paddingBottom": 16,
+          "paddingButton": 32,
           "paddingLeft": 20,
           "paddingRight": 12,
-          "paddingTop": 16,
+          "paddingTop": 32,
         }
       }
     >

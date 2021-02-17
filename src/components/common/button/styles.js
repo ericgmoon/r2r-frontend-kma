@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { Button } from "react-native-elements";
 
 export default styled(Button).attrs(
-  ({ icon, iconRight, iconContainerStyle }) => ({
+  ({ icon, iconRight, buttonStyle, iconContainerStyle }) => ({
     buttonStyle: {
       borderRadius: 36,
       paddingTop: 16,
@@ -11,6 +11,7 @@ export default styled(Button).attrs(
       paddingRight: 20,
       background: "#000",
       ...(icon && (iconRight ? { paddingRight: 12 } : { paddingLeft: 12 })),
+      ...buttonStyle,
     },
     iconContainerStyle: {
       ...(iconRight ? { marginLeft: 16 } : { marginRight: 16 }),

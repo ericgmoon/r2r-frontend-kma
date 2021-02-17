@@ -26,6 +26,8 @@ export default function Button({
             type: "material",
           }
         }
+        buttonStyle={buttonStyle}
+        iconContainerStyle={iconContainerStyle}
         {...others}
       />
     </ThemeProvider>
