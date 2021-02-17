@@ -7,7 +7,7 @@ import { Dialog } from "@r2r/composites";
 storiesOf("Dialog", module)
   .add("Standard", () => (
     <Dialog
-      data={[
+      content={[
         {
           name: text("Person 1 Name", "Person 1"),
           text: text("Dialog Text 1", "Lorem ipsum dolor sit amet"),
@@ -41,7 +41,7 @@ storiesOf("Dialog", module)
   ))
   .add("Long", () => (
     <Dialog
-      data={[
+      content={[
         {
           name: "Person 1",
           text:

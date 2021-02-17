@@ -7,17 +7,17 @@ import styles from "./styles";
 const MAX_LINES = 3;
 
 export default function Dialog(props) {
-  const { data, avatars, onDialogFinish, ...others } = props;
+  const { content, avatars, onDialogFinish, ...others } = props;
 
   const [index, setIndex] = useState(0);
-  const [truncatedData, setTruncatedData] = useState(data);
-  const [active, setActive] = useState(truncatedData[0]);
+  const [truncatedContent, setTruncatedContent] = useState(content);
+  const [active, setActive] = useState(truncatedContent[0]);
 
-  useEffect(() => setActive(truncatedData[index]), [index]);
-  useEffect(() => setActive(truncatedData[index]), [truncatedData]);
+  useEffect(() => setActive(truncatedContent[index]), [index]);
+  useEffect(() => setActive(truncatedContent[index]), [truncatedContent]);
 
   const onNextPress = () => {
-    if (index + 1 < truncatedData.length) setIndex(index + 1);
+    if (index + 1 < truncatedContent.length) setIndex(index + 1);
     else {
       onDialogFinish();
     }
@@ -61,11 +61,11 @@ export default function Dialog(props) {
                 .slice(3)
                 .map((e) => e.text)
                 .join("");
-              await setTruncatedData([
-                ...truncatedData.slice(0, index),
+              await setTruncatedContent([
+                ...truncatedContent.slice(0, index),
                 currEntry,
                 nextEntry,
-                ...truncatedData.slice(index + 1),
+                ...truncatedContent.slice(index + 1),
               ]);
             }
           }}
@@ -100,7 +100,7 @@ export default function Dialog(props) {
 }
 
 Dialog.propTypes = {
-  data: PropTypes.arrayOf(
+  content: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       text: PropTypes.string.isRequired,

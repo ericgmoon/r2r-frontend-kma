@@ -11,7 +11,7 @@ describe("should trigger onDialogFinish", () => {
   test("with one screen", () => {
     const node = mount(
       <Dialog
-        data={[
+        content={[
           {
             name: "Person 1",
             text: "Lorem ipsum dolor sit amet",
@@ -34,7 +34,7 @@ describe("should trigger onDialogFinish", () => {
   test("with multiple screens", () => {
     const node = mount(
       <Dialog
-        data={[
+        content={[
           {
             name: "Person 1",
             text: "Lorem ipsum dolor sit amet",
@@ -74,7 +74,7 @@ describe("should trigger onDialogFinish", () => {
       const node = renderer
         .create(
           <Dialog
-            data={[
+            content={[
               {
                 name: "Person 1",
                 text: "Lorem ipsum dolor sit amet",
@@ -95,7 +95,7 @@ describe("should trigger onDialogFinish", () => {
       const node = renderer
         .create(
           <Dialog
-            data={[
+            content={[
               {
                 name: "Person 1",
                 text: "Lorem ipsum dolor sit amet",
@@ -121,7 +121,7 @@ describe("should trigger onDialogFinish", () => {
       const node = renderer
         .create(
           <Dialog
-            data={[
+            content={[
               {
                 name: "Person 1",
                 nameColor: "#6abd75",
@@ -144,7 +144,7 @@ describe("should trigger onDialogFinish", () => {
       const node = renderer
         .create(
           <Dialog
-            data={[
+            content={[
               {
                 name: "Person 1",
                 avatar: "sample",
@@ -177,7 +177,7 @@ describe("should trigger onDialogFinish", () => {
       const node = renderer
         .create(
           <Dialog
-            data={[
+            content={[
               {
                 name: "Person 1",
                 text: "Lorem ipsum dolor sit amet",
