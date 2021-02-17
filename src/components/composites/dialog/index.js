@@ -14,6 +14,7 @@ export default function Dialog(props) {
   const [active, setActive] = useState(truncatedData[0]);
 
   useEffect(() => setActive(truncatedData[index]), [index]);
+  useEffect(() => setActive(truncatedData[index]), [truncatedData]);
 
   const onNextPress = () => {
     if (index + 1 < truncatedData.length) setIndex(index + 1);
@@ -41,8 +42,15 @@ export default function Dialog(props) {
              * split into a separate panel.
              */
             if (lines.length > MAX_LINES) {
-              const currEntry = { ...active };
-              const nextEntry = { ...active };
+              const currEntry = {
+                ...active,
+                ...(active.applyCustomButtonForTruncation
+                  ? null
+                  : { buttonText: undefined, buttonIcon: undefined }),
+              };
+              const nextEntry = {
+                ...active,
+              };
               currEntry.text = lines
                 .slice(0, 3)
                 .map((e) => e.text)
@@ -94,6 +102,7 @@ Dialog.propTypes = {
       isLeft: PropTypes.bool,
       buttonText: PropTypes.string,
       buttonIcon: PropTypes.string,
+      applyCustomButtonForTruncation: PropTypes.bool,
     })
   ).isRequired,
   avatars: PropTypes.objectOf(PropTypes.node),
