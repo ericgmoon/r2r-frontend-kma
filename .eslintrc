@@ -12,7 +12,8 @@
     "prettier/prettier": "error",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/prop-types": "warn"
+    "react/prop-types": "warn",
+    "dot-notation": "off"
   },
   "plugins": ["prettier", "jest", "import"],
   "settings": {
