@@ -18,7 +18,9 @@ export default function Dialog(props) {
 
   const onNextPress = () => {
     if (index + 1 < truncatedData.length) setIndex(index + 1);
-    else onDialogFinish();
+    else {
+      onDialogFinish();
+    }
   };
 
   return (
@@ -85,7 +87,11 @@ export default function Dialog(props) {
         />
       </View>
       <View style={styles.navButtonContainer}>
-        <Button icon={active.buttonIcon || "east"} onPress={onNextPress}>
+        <Button
+          testID="nextButton"
+          icon={active.buttonIcon || "east"}
+          onPress={onNextPress}
+        >
           {active.buttonText || "next"}
         </Button>
       </View>

@@ -34,7 +34,7 @@ storiesOf("Dialog", module)
       ]}
       avatars={{
         // eslint-disable-next-line global-require, import/no-unresolved
-        sample: require("@r2r/assets/images/sample-dialog-avatar.png"),
+        sample: require("@r2r/assets/images/dev/sample-dialog-avatar.png"),
       }}
       onDialogFinish={() => action("Dialog ended")}
     />
@@ -71,7 +71,7 @@ storiesOf("Dialog", module)
       ]}
       avatars={{
         // eslint-disable-next-line global-require, import/no-unresolved
-        sample: require("@r2r/assets/images/sample-dialog-avatar.png"),
+        sample: require("@r2r/assets/images/dev/sample-dialog-avatar.png"),
       }}
       onDialogFinish={() => action("Dialog ended")}
     />
