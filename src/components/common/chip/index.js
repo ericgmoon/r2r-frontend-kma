@@ -6,6 +6,7 @@ export default function Chip({
   label,
   value,
   active,
+  activeColor = "#DF6A6A",
   chipStyle,
   isStatic,
   ...others
@@ -18,7 +19,7 @@ export default function Chip({
       }}
       buttonStyle={{
         ...styles.button,
-        backgroundColor: active ? "#DF6A6A" : `#ECECEC`,
+        backgroundColor: active ? activeColor : `#ECECEC`,
         ...chipStyle,
       }}
       titleStyle={{

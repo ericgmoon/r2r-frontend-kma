@@ -8,7 +8,8 @@
     "eject": "expo eject",
     "test": "jest --passWithNoTests",
     "lint": "eslint",
-    "storybook": "export REACT_NATIVE_STORYBOOK=true && npm start"
+    "storybook": "export REACT_NATIVE_STORYBOOK=true && npm start",
+    "prestorybook": "rnstl"
   },
   "config": {
     "react-native-storybook-loader": {
@@ -43,6 +44,7 @@
     "expo-status-bar": "~1.0.3",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",

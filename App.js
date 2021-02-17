@@ -5,7 +5,7 @@ import StorybookUIRoot from "./storybook";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FF0000",
+    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
