@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { Icon } from "react-native-elements";
 import { Button } from "@r2r/common";
 import StyledOverlay, {
