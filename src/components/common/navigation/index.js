@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import Chip from "../chip";
+import Chip from "@r2r/common/chip";
 import styles from "./styles";
 
 export default function Navigation({
