@@ -24,7 +24,8 @@ storiesOf("Overlay", module).add("Overlay", () => {
             action("onClose");
             setOpen(false);
           }}
-          button={<Button title="Button" icon="send" />}
+          buttonLabel="Button"
+          buttonProps={{ icon: "send" }}
         >
           <Text>I am the children</Text>
         </Overlay>

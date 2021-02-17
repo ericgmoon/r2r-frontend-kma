@@ -16,7 +16,7 @@ export default function Overlay({
   showClose,
   onClose = () => {},
   buttonProps,
-  button,
+  buttonLabel,
   children,
   ...others
 }) {
@@ -39,7 +39,7 @@ export default function Overlay({
         </TitleContainer>
         <ChildrenContainer>{children}</ChildrenContainer>
         <ButtonContainer>
-          {button ? <Button {...buttonProps}>{button}</Button> : null}
+          {buttonLabel ? <Button {...buttonProps}>{buttonLabel}</Button> : null}
         </ButtonContainer>
       </Container>
     </StyledOverlay>
