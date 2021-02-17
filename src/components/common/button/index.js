@@ -1,49 +1,34 @@
 import React from "react";
-import { Button as EButton, ThemeProvider } from "react-native-elements";
-import styles from "./styles";
+import { ThemeProvider } from "react-native-elements";
 
-export default function Button(props) {
-  const {
-    children,
-    icon,
-    iconColor,
-    color,
-    iconLeft,
-    buttonStyle,
-    iconContainerStyle,
-    ...others
-  } = props;
+import StyledButton from "./styles";
 
-  const getIconStyle = () => {
-    if (icon) return iconLeft ? styles.buttonIconLeft : styles.buttonIconRight;
-    return null;
-  };
-
+export default function Button({
+  children,
+  icon,
+  iconColor,
+  color,
+  iconLeft,
+  buttonStyle,
+  iconContainerStyle,
+  ...others
+}) {
   return (
     <ThemeProvider theme={{ colors: { primary: color || "black" } }}>
-      <EButton
-        buttonStyle={{
-          ...styles.button,
-          ...getIconStyle(),
-          ...buttonStyle,
-        }}
+      <StyledButton
+        title={typeof children === "string" ? children.toUpperCase() : children}
         iconRight={!iconLeft}
         icon={
-          icon
-            ? {
-                name: icon,
-                size: 24,
-                color: iconColor || "white",
-                type: "material",
-              }
-            : null
+          icon && {
+            name: icon,
+            size: 24,
+            color: iconColor || "white",
+            type: "material",
+          }
         }
-        iconContainerStyle={{
-          ...(iconLeft ? styles.iconLeft : styles.iconRight),
-          ...iconContainerStyle,
-        }}
+        buttonStyle={buttonStyle}
+        iconContainerStyle={iconContainerStyle}
         {...others}
-        title={typeof children === "string" ? children.toUpperCase() : children}
       />
     </ThemeProvider>
   );
