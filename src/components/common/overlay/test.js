@@ -9,12 +9,7 @@ import Button from "../button";
 test("should trigger onClosePress", () => {
   const callback = sinon.spy();
   const node = shallow(
-    <Overlay
-      className="overlay"
-      isVisible
-      isCloseIconVisible
-      onClosePress={callback}
-    >
+    <Overlay className="overlay" isVisible showClose onClose={callback}>
       button
     </Overlay>
   );

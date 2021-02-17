@@ -45,10 +45,9 @@ exports[`renders correctly with custom styles 1`] = `
           "justifyContent": "center",
           "padding": 8,
           "paddingBottom": 16,
-          "paddingButton": 32,
           "paddingLeft": 20,
           "paddingRight": 12,
-          "paddingTop": 32,
+          "paddingTop": 16,
         }
       }
     >
@@ -114,8 +113,8 @@ exports[`renders correctly with icon on left 1`] = `
           "justifyContent": "center",
           "padding": 8,
           "paddingBottom": 16,
-          "paddingLeft": 12,
-          "paddingRight": 20,
+          "paddingLeft": 20,
+          "paddingRight": 12,
           "paddingTop": 16,
         }
       }

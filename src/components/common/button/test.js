@@ -7,7 +7,7 @@ import Button from "./index";
 
 test("should capitalise text", () => {
   const node = shallow(<Button>button</Button>);
-  expect(node.find(EButton).prop("title")).toEqual("BUTTON");
+  expect(node.find(EButton).prop("children")).toEqual("BUTTON");
 });
 
 test("should trigger onPress", () => {

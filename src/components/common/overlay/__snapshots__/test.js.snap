@@ -4,6 +4,11 @@ exports[`renders correctly with button as child 1`] = `
 <Modal
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  style={
+    Array [
+      Object {},
+    ]
+  }
   theme={
     Object {
       "colors": Object {
@@ -120,39 +125,46 @@ exports[`renders correctly with button as child 1`] = `
     >
       <View
         style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-          }
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
         }
       >
         <View
           style={
-            Object {
-              "flex": 1,
-              "flexDirection": "row",
-              "height": 24,
-              "justifyContent": "space-between",
-              "marginBottom": 20,
-            }
+            Array [
+              Object {
+                "flexDirection": "row",
+                "height": 24,
+                "justifyContent": "space-between",
+                "marginBottom": 20,
+              },
+            ]
           }
         >
           <View />
           <View
             style={
-              Object {
-                "height": 16,
-                "width": 24,
-              }
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
             }
           />
         </View>
         <View
           style={
-            Object {
-              "marginBottom": 20,
-              "marginTop": 20,
-            }
+            Array [
+              Object {
+                "marginBottom": 20,
+                "marginTop": 20,
+              },
+            ]
           }
         >
           <View
@@ -223,10 +235,12 @@ exports[`renders correctly with button as child 1`] = `
         </View>
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "justifyContent": "center",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
           }
         />
       </View>
@@ -238,7 +252,13 @@ exports[`renders correctly with button as child 1`] = `
 exports[`renders correctly with close icon 1`] = `
 <Modal
   hardwareAccelerated={false}
+  isCloseIconVisible={true}
   onRequestClose={[Function]}
+  style={
+    Array [
+      Object {},
+    ]
+  }
   theme={
     Object {
       "colors": Object {
@@ -355,47 +375,56 @@ exports[`renders correctly with close icon 1`] = `
     >
       <View
         style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-          }
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
         }
       >
         <View
           style={
-            Object {
-              "flex": 1,
-              "flexDirection": "row",
-              "height": 24,
-              "justifyContent": "space-between",
-              "marginBottom": 20,
-            }
+            Array [
+              Object {
+                "flexDirection": "row",
+                "height": 24,
+                "justifyContent": "space-between",
+                "marginBottom": 20,
+              },
+            ]
           }
         >
           <View />
           <View
             style={
-              Object {
-                "height": 16,
-                "width": 24,
-              }
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
             }
           />
         </View>
         <View
           style={
-            Object {
-              "marginBottom": 20,
-              "marginTop": 20,
-            }
+            Array [
+              Object {
+                "marginBottom": 20,
+                "marginTop": 20,
+              },
+            ]
           }
         />
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "justifyContent": "center",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
           }
         />
       </View>
@@ -408,6 +437,11 @@ exports[`renders correctly with custom button 1`] = `
 <Modal
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  style={
+    Array [
+      Object {},
+    ]
+  }
   theme={
     Object {
       "colors": Object {
@@ -524,47 +558,56 @@ exports[`renders correctly with custom button 1`] = `
     >
       <View
         style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-          }
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
         }
       >
         <View
           style={
-            Object {
-              "flex": 1,
-              "flexDirection": "row",
-              "height": 24,
-              "justifyContent": "space-between",
-              "marginBottom": 20,
-            }
+            Array [
+              Object {
+                "flexDirection": "row",
+                "height": 24,
+                "justifyContent": "space-between",
+                "marginBottom": 20,
+              },
+            ]
           }
         >
           <View />
           <View
             style={
-              Object {
-                "height": 16,
-                "width": 24,
-              }
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
             }
           />
         </View>
         <View
           style={
-            Object {
-              "marginBottom": 20,
-              "marginTop": 20,
-            }
+            Array [
+              Object {
+                "marginBottom": 20,
+                "marginTop": 20,
+              },
+            ]
           }
         />
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "justifyContent": "center",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
           }
         >
           <View
@@ -643,6 +686,11 @@ exports[`renders correctly with text 1`] = `
 <Modal
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  style={
+    Array [
+      Object {},
+    ]
+  }
   theme={
     Object {
       "colors": Object {
@@ -759,49 +807,58 @@ exports[`renders correctly with text 1`] = `
     >
       <View
         style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-          }
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
         }
       >
         <View
           style={
-            Object {
-              "flex": 1,
-              "flexDirection": "row",
-              "height": 24,
-              "justifyContent": "space-between",
-              "marginBottom": 20,
-            }
+            Array [
+              Object {
+                "flexDirection": "row",
+                "height": 24,
+                "justifyContent": "space-between",
+                "marginBottom": 20,
+              },
+            ]
           }
         >
           <View />
           <View
             style={
-              Object {
-                "height": 16,
-                "width": 24,
-              }
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
             }
           />
         </View>
         <View
           style={
-            Object {
-              "marginBottom": 20,
-              "marginTop": 20,
-            }
+            Array [
+              Object {
+                "marginBottom": 20,
+                "marginTop": 20,
+              },
+            ]
           }
         >
           Button
         </View>
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "justifyContent": "center",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
           }
         />
       </View>
@@ -814,6 +871,11 @@ exports[`renders correctly with title 1`] = `
 <Modal
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  style={
+    Array [
+      Object {},
+    ]
+  }
   theme={
     Object {
       "colors": Object {
@@ -930,30 +992,35 @@ exports[`renders correctly with title 1`] = `
     >
       <View
         style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-          }
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
         }
       >
         <View
           style={
-            Object {
-              "flex": 1,
-              "flexDirection": "row",
-              "height": 24,
-              "justifyContent": "space-between",
-              "marginBottom": 20,
-            }
+            Array [
+              Object {
+                "flexDirection": "row",
+                "height": 24,
+                "justifyContent": "space-between",
+                "marginBottom": 20,
+              },
+            ]
           }
         >
           <View>
             <Text
               style={
-                Object {
-                  "fontSize": 20,
-                  "fontWeight": "bold",
-                }
+                Array [
+                  Object {
+                    "fontSize": 20,
+                    "fontWeight": "bold",
+                  },
+                ]
               }
             >
               Title
@@ -961,27 +1028,33 @@ exports[`renders correctly with title 1`] = `
           </View>
           <View
             style={
-              Object {
-                "height": 16,
-                "width": 24,
-              }
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
             }
           />
         </View>
         <View
           style={
-            Object {
-              "marginBottom": 20,
-              "marginTop": 20,
-            }
+            Array [
+              Object {
+                "marginBottom": 20,
+                "marginTop": 20,
+              },
+            ]
           }
         />
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "justifyContent": "center",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
           }
         />
       </View>
@@ -994,6 +1067,11 @@ exports[`renders correctly without props 1`] = `
 <Modal
   hardwareAccelerated={false}
   onRequestClose={[Function]}
+  style={
+    Array [
+      Object {},
+    ]
+  }
   theme={
     Object {
       "colors": Object {
@@ -1110,47 +1188,56 @@ exports[`renders correctly without props 1`] = `
     >
       <View
         style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-          }
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+            },
+          ]
         }
       >
         <View
           style={
-            Object {
-              "flex": 1,
-              "flexDirection": "row",
-              "height": 24,
-              "justifyContent": "space-between",
-              "marginBottom": 20,
-            }
+            Array [
+              Object {
+                "flexDirection": "row",
+                "height": 24,
+                "justifyContent": "space-between",
+                "marginBottom": 20,
+              },
+            ]
           }
         >
           <View />
           <View
             style={
-              Object {
-                "height": 16,
-                "width": 24,
-              }
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
             }
           />
         </View>
         <View
           style={
-            Object {
-              "marginBottom": 20,
-              "marginTop": 20,
-            }
+            Array [
+              Object {
+                "marginBottom": 20,
+                "marginTop": 20,
+              },
+            ]
           }
         />
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "justifyContent": "center",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
           }
         />
       </View>
