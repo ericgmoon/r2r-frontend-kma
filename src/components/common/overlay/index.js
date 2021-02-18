@@ -1,43 +1,47 @@
 import React from "react";
-import { Text, View } from "react-native";
-import { Overlay as EOverlay, Icon } from "react-native-elements";
+import { View } from "react-native";
+import { Icon } from "react-native-elements";
 import Button from "@r2r/common/button";
-import styles from "./styles";
+import StyledOverlay, {
+  Container,
+  TitleContainer,
+  Title,
+  ChildrenContainer,
+  ButtonContainer,
+  IconContainer,
+} from "./styles";
 
-export default function Overlay(props) {
-  const {
-    title,
-    isCloseIconVisible,
-    onClosePress,
-    buttonProps,
-    button,
-    children,
-    ...others
-  } = props;
-
+export default function Overlay({
+  title,
+  showClose,
+  onClose = () => {},
+  buttonProps,
+  buttonLabel,
+  children,
+  ...others
+}) {
   return (
-    <EOverlay overlayStyle={styles.overlay} {...others}>
-      <View style={styles.flexContainer}>
-        <View style={styles.flexTitleContainer}>
-          <View>
-            {title ? <Text style={styles.title}>{title}</Text> : null}
-          </View>
-          <View style={styles.iconContainer}>
-            {isCloseIconVisible ? (
+    <StyledOverlay {...others}>
+      <Container>
+        <TitleContainer>
+          <View>{title && <Title>{title}</Title>}</View>
+          <IconContainer>
+            {showClose ? (
               <Icon
                 name="clear"
                 color="black"
-                onPress={onClosePress}
+                size={24}
+                onPress={onClose}
                 type="material"
               />
             ) : null}
-          </View>
-        </View>
-        <View style={styles.children}>{children}</View>
-        <View style={styles.button}>
-          {button ? <Button {...buttonProps}>{button}</Button> : null}
-        </View>
-      </View>
-    </EOverlay>
+          </IconContainer>
+        </TitleContainer>
+        <ChildrenContainer>{children}</ChildrenContainer>
+        <ButtonContainer>
+          {buttonLabel ? <Button {...buttonProps}>{buttonLabel}</Button> : null}
+        </ButtonContainer>
+      </Container>
+    </StyledOverlay>
   );
 }

@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default process.env.REACT_NATIVE_STORYBOOK ? StorybookUIRoot : App;
+export default process.env["REACT_NATIVE_STORYBOOK"] ? StorybookUIRoot : App;
