@@ -1,34 +1,26 @@
 import React from "react";
-import { Button } from "react-native-elements";
-import styles from "./styles";
+import { View } from "react-native";
+import StyledChip from "./styles";
 
 export default function Chip({
   label,
   value,
   active,
   activeColor = "#DF6A6A",
-  chipStyle,
   isStatic,
+  chipStyle,
   ...others
 }) {
   return (
-    <Button
-      value={value}
-      style={{
-        pointerEvents: isStatic ? "none" : "all",
-      }}
-      buttonStyle={{
-        ...styles.button,
-        backgroundColor: active ? activeColor : `#ECECEC`,
-        ...chipStyle,
-      }}
-      titleStyle={{
-        ...styles.buttonTitle,
-        color: active ? "white" : "black",
-      }}
-      iconRight
-      {...others}
-      title={label}
-    />
+    <View pointerEvents={isStatic ? "none" : "auto"}>
+      <StyledChip
+        title={label}
+        value={value}
+        active={active}
+        activeColor={activeColor}
+        chipStyle={chipStyle}
+        {...others}
+      />
+    </View>
   );
 }

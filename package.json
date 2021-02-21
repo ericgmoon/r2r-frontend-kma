@@ -55,7 +55,8 @@
     "react-native-web": "~0.13.12",
     "react-test-renderer": "^16.13.1",
     "require-context.macro": "^1.2.2",
-    "sinon": "^9.2.4"
+    "sinon": "^9.2.4",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",

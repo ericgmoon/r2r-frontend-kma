@@ -1,7 +1,5 @@
 import React from "react";
-import { View } from "react-native";
-import { Chip } from "@r2r/common";
-import styles from "./styles";
+import { Container, StyledChip } from "./styles";
 
 export default function Navigation({
   items,
@@ -11,28 +9,18 @@ export default function Navigation({
   ...others
 }) {
   return (
-    <View
-      style={{
-        ...styles.container,
-        ...{
-          flexDirection: direction,
-          alignItems: direction === "column" ? "flex-start" : null,
-        },
-      }}
-      {...others}
-    >
+    <Container direction={direction} {...others}>
       {items.map((item) => (
-        <Chip
+        <StyledChip
           key={item.value}
           label={item.label}
           value={item.value}
-          style={styles.chip}
           active={current === item.value}
           onPress={() => {
             onNavigate(item.value);
           }}
         />
       ))}
-    </View>
+    </Container>
   );
 }
