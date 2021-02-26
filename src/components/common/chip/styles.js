@@ -8,7 +8,6 @@ export default styled(Button).attrs(({ active, activeColor, chipStyle }) => ({
     paddingBottom: 8,
     paddingLeft: 12,
     paddingRight: 12,
-    textTransform: "uppercase",
     backgroundColor: active ? activeColor : `#ECECEC`,
     ...chipStyle,
   },
