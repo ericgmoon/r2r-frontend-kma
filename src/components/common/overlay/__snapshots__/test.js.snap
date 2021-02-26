@@ -109,8 +109,7 @@ exports[`renders correctly with button as child 1`] = `
     <View
       style={
         Object {
-          "background": "#fafafa",
-          "backgroundColor": "white",
+          "backgroundColor": "#fafafa",
           "borderRadius": 20,
           "padding": 20,
           "shadowColor": "rgba(0, 0, 0, .3)",
@@ -359,8 +358,7 @@ exports[`renders correctly with close icon 1`] = `
     <View
       style={
         Object {
-          "background": "#fafafa",
-          "backgroundColor": "white",
+          "backgroundColor": "#fafafa",
           "borderRadius": 20,
           "padding": 20,
           "shadowColor": "rgba(0, 0, 0, .3)",
@@ -542,8 +540,7 @@ exports[`renders correctly with custom button 1`] = `
     <View
       style={
         Object {
-          "background": "#fafafa",
-          "backgroundColor": "white",
+          "backgroundColor": "#fafafa",
           "borderRadius": 20,
           "padding": 20,
           "shadowColor": "rgba(0, 0, 0, .3)",
@@ -791,8 +788,7 @@ exports[`renders correctly with text 1`] = `
     <View
       style={
         Object {
-          "background": "#fafafa",
-          "backgroundColor": "white",
+          "backgroundColor": "#fafafa",
           "borderRadius": 20,
           "padding": 20,
           "shadowColor": "rgba(0, 0, 0, .3)",
@@ -976,8 +972,7 @@ exports[`renders correctly with title 1`] = `
     <View
       style={
         Object {
-          "background": "#fafafa",
-          "backgroundColor": "white",
+          "backgroundColor": "#fafafa",
           "borderRadius": 20,
           "padding": 20,
           "shadowColor": "rgba(0, 0, 0, .3)",
@@ -1172,8 +1167,7 @@ exports[`renders correctly without props 1`] = `
     <View
       style={
         Object {
-          "background": "#fafafa",
-          "backgroundColor": "white",
+          "backgroundColor": "#fafafa",
           "borderRadius": 20,
           "padding": 20,
           "shadowColor": "rgba(0, 0, 0, .3)",

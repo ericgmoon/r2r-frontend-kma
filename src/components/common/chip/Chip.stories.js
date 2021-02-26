@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react-native";
 import React from "react";
 import { Chip } from "@r2r/common";
 
-storiesOf("Navigation", module).add("Chip", () => (
+storiesOf("Chip", module).add("Standard", () => (
   <Chip
     label={text("Label", "Default")}
     onPress={action("Actioned")}
