@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { Chip } from "@r2r/common";
+import Chip from "@r2r/common/chip";
 
 export const Container = styled.View(({ direction }) => ({
   display: "flex",
