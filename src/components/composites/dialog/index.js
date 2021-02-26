@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { Text, View, Image } from "react-native";
-import { Button, Chip } from "@r2r/common";
-import styles from "./styles";
+import { Button } from "@r2r/common";
+import {
+  Container,
+  StyledChip,
+  NameContainer,
+  ContentContainer,
+  Content,
+  StyledAvatar,
+  ButtonContainer,
+} from "./styles";
 
 const MAX_LINES = 3;
 
@@ -24,19 +31,17 @@ export default function Dialog(props) {
   };
 
   return (
-    <View style={styles.root}>
-      <View style={styles.nameContainer}>
-        <Chip
+    <Container>
+      <NameContainer>
+        <StyledChip
           label={active.name}
-          chipStyle={styles.name}
           active
           activeColor={active.nameColor}
           isStatic
         />
-      </View>
-      <View style={styles.body} {...others}>
-        <Text
-          style={styles.text}
+      </NameContainer>
+      <ContentContainer {...others}>
+        <Content
           onTextLayout={async ({ nativeEvent: { lines } }) => {
             /**
              * As the Dialog design does not allow text to be longer than a
@@ -73,20 +78,14 @@ export default function Dialog(props) {
           numberOfLines={MAX_LINES}
         >
           {active.text}
-        </Text>
-        <Image
+        </Content>
+        <StyledAvatar
           source={avatars[active.avatar]}
-          style={[
-            styles.avatar,
-            {
-              transform: [{ scaleX: active.isLeft ? -1 : 1 }],
-              alignSelf: active.isLeft ? "flex-start" : "flex-end",
-            },
-          ]}
+          active={active}
           resizeMode="contain"
         />
-      </View>
-      <View style={styles.navButtonContainer}>
+      </ContentContainer>
+      <ButtonContainer>
         <Button
           testID="nextButton"
           icon={active.buttonIcon || "east"}
@@ -94,8 +93,8 @@ export default function Dialog(props) {
         >
           {active.buttonText || "next"}
         </Button>
-      </View>
-    </View>
+      </ButtonContainer>
+    </Container>
   );
 }
 
