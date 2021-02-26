@@ -9,5 +9,6 @@ storiesOf("Chip", module).add("Standard", () => (
     label={text("Label", "Default")}
     onPress={action("Actioned")}
     active={boolean("Active", false)}
+    isStatic={boolean("Static", false)}
   />
 ));

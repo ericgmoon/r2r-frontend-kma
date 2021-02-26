@@ -70,7 +70,6 @@ exports[`should trigger onDialogFinish renders correctly with avatars 1`] = `
                 "paddingLeft": 48,
                 "paddingRight": 48,
                 "paddingTop": 8,
-                "textTransform": "uppercase",
               }
             }
           >
@@ -303,7 +302,6 @@ exports[`should trigger onDialogFinish renders correctly with custom buttons 1`]
                 "paddingLeft": 48,
                 "paddingRight": 48,
                 "paddingTop": 8,
-                "textTransform": "uppercase",
               }
             }
           >
@@ -531,7 +529,6 @@ exports[`should trigger onDialogFinish renders correctly with custom name colors
                 "paddingLeft": 48,
                 "paddingRight": 48,
                 "paddingTop": 8,
-                "textTransform": "uppercase",
               }
             }
           >
@@ -759,7 +756,6 @@ exports[`should trigger onDialogFinish renders correctly with long texts 1`] = `
                 "paddingLeft": 48,
                 "paddingRight": 48,
                 "paddingTop": 8,
-                "textTransform": "uppercase",
               }
             }
           >
@@ -986,7 +982,6 @@ exports[`should trigger onDialogFinish renders correctly without optional props 
                 "paddingLeft": 48,
                 "paddingRight": 48,
                 "paddingTop": 8,
-                "textTransform": "uppercase",
               }
             }
           >
