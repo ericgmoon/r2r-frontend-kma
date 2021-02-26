@@ -3,18 +3,22 @@
 exports[`should trigger onDialogFinish renders correctly with avatars 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "height": "40%",
-      "width": "70%",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
   }
 >
   <View
     style={
-      Object {
-        "zIndex": 1,
-      }
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
     }
   >
     <View
@@ -90,15 +94,20 @@ exports[`should trigger onDialogFinish renders correctly with avatars 1`] = `
   </View>
   <View
     style={
-      Object {
-        "backgroundColor": "#fff",
-        "borderRadius": 20,
-        "height": "100%",
-        "marginTop": -16,
-        "overflow": "hidden",
-        "padding": 32,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
     }
   >
     <Text
@@ -106,18 +115,27 @@ exports[`should trigger onDialogFinish renders correctly with avatars 1`] = `
       numberOfLines={3}
       onTextLayout={[Function]}
       style={
-        Object {
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "marginBottom": 12,
-          "marginTop": 12,
-          "minHeight": "30%",
-        }
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
       }
     >
       Lorem ipsum dolor sit amet
     </Text>
     <Image
+      active={
+        Object {
+          "avatar": "sample",
+          "name": "Person 1",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
       resizeMode="contain"
       source={
         Object {
@@ -127,16 +145,9 @@ exports[`should trigger onDialogFinish renders correctly with avatars 1`] = `
       style={
         Array [
           Object {
+            "alignSelf": "flex-end",
             "height": "100%",
             "width": 96,
-          },
-          Object {
-            "alignSelf": "flex-end",
-            "transform": Array [
-              Object {
-                "scaleX": 1,
-              },
-            ],
           },
         ]
       }
@@ -144,10 +155,12 @@ exports[`should trigger onDialogFinish renders correctly with avatars 1`] = `
   </View>
   <View
     style={
-      Object {
-        "marginBottom": 16,
-        "marginTop": 16,
-      }
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
     }
   >
     <View
@@ -223,18 +236,22 @@ exports[`should trigger onDialogFinish renders correctly with avatars 1`] = `
 exports[`should trigger onDialogFinish renders correctly with custom buttons 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "height": "40%",
-      "width": "70%",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
   }
 >
   <View
     style={
-      Object {
-        "zIndex": 1,
-      }
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
     }
   >
     <View
@@ -310,15 +327,20 @@ exports[`should trigger onDialogFinish renders correctly with custom buttons 1`]
   </View>
   <View
     style={
-      Object {
-        "backgroundColor": "#fff",
-        "borderRadius": 20,
-        "height": "100%",
-        "marginTop": -16,
-        "overflow": "hidden",
-        "padding": 32,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
     }
   >
     <Text
@@ -326,32 +348,34 @@ exports[`should trigger onDialogFinish renders correctly with custom buttons 1`]
       numberOfLines={3}
       onTextLayout={[Function]}
       style={
-        Object {
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "marginBottom": 12,
-          "marginTop": 12,
-          "minHeight": "30%",
-        }
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
       }
     >
       Lorem ipsum dolor sit amet
     </Text>
     <Image
+      active={
+        Object {
+          "buttonText": "Continue",
+          "name": "Person 1",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
       resizeMode="contain"
       style={
         Array [
           Object {
+            "alignSelf": "flex-end",
             "height": "100%",
             "width": 96,
-          },
-          Object {
-            "alignSelf": "flex-end",
-            "transform": Array [
-              Object {
-                "scaleX": 1,
-              },
-            ],
           },
         ]
       }
@@ -359,10 +383,12 @@ exports[`should trigger onDialogFinish renders correctly with custom buttons 1`]
   </View>
   <View
     style={
-      Object {
-        "marginBottom": 16,
-        "marginTop": 16,
-      }
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
     }
   >
     <View
@@ -438,18 +464,22 @@ exports[`should trigger onDialogFinish renders correctly with custom buttons 1`]
 exports[`should trigger onDialogFinish renders correctly with custom name colors 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "height": "40%",
-      "width": "70%",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
   }
 >
   <View
     style={
-      Object {
-        "zIndex": 1,
-      }
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
     }
   >
     <View
@@ -525,15 +555,20 @@ exports[`should trigger onDialogFinish renders correctly with custom name colors
   </View>
   <View
     style={
-      Object {
-        "backgroundColor": "#fff",
-        "borderRadius": 20,
-        "height": "100%",
-        "marginTop": -16,
-        "overflow": "hidden",
-        "padding": 32,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
     }
   >
     <Text
@@ -541,32 +576,34 @@ exports[`should trigger onDialogFinish renders correctly with custom name colors
       numberOfLines={3}
       onTextLayout={[Function]}
       style={
-        Object {
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "marginBottom": 12,
-          "marginTop": 12,
-          "minHeight": "30%",
-        }
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
       }
     >
       Lorem ipsum dolor sit amet
     </Text>
     <Image
+      active={
+        Object {
+          "name": "Person 1",
+          "nameColor": "#6abd75",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
       resizeMode="contain"
       style={
         Array [
           Object {
+            "alignSelf": "flex-end",
             "height": "100%",
             "width": 96,
-          },
-          Object {
-            "alignSelf": "flex-end",
-            "transform": Array [
-              Object {
-                "scaleX": 1,
-              },
-            ],
           },
         ]
       }
@@ -574,10 +611,12 @@ exports[`should trigger onDialogFinish renders correctly with custom name colors
   </View>
   <View
     style={
-      Object {
-        "marginBottom": 16,
-        "marginTop": 16,
-      }
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
     }
   >
     <View
@@ -653,18 +692,22 @@ exports[`should trigger onDialogFinish renders correctly with custom name colors
 exports[`should trigger onDialogFinish renders correctly with long texts 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "height": "40%",
-      "width": "70%",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
   }
 >
   <View
     style={
-      Object {
-        "zIndex": 1,
-      }
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
     }
   >
     <View
@@ -740,15 +783,20 @@ exports[`should trigger onDialogFinish renders correctly with long texts 1`] = `
   </View>
   <View
     style={
-      Object {
-        "backgroundColor": "#fff",
-        "borderRadius": 20,
-        "height": "100%",
-        "marginTop": -16,
-        "overflow": "hidden",
-        "padding": 32,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
     }
   >
     <Text
@@ -756,32 +804,33 @@ exports[`should trigger onDialogFinish renders correctly with long texts 1`] = `
       numberOfLines={3}
       onTextLayout={[Function]}
       style={
-        Object {
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "marginBottom": 12,
-          "marginTop": 12,
-          "minHeight": "30%",
-        }
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
       }
     >
       Lorem ipsum dolor sit amet
     </Text>
     <Image
+      active={
+        Object {
+          "name": "Person 1",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
       resizeMode="contain"
       style={
         Array [
           Object {
+            "alignSelf": "flex-end",
             "height": "100%",
             "width": 96,
-          },
-          Object {
-            "alignSelf": "flex-end",
-            "transform": Array [
-              Object {
-                "scaleX": 1,
-              },
-            ],
           },
         ]
       }
@@ -789,10 +838,12 @@ exports[`should trigger onDialogFinish renders correctly with long texts 1`] = `
   </View>
   <View
     style={
-      Object {
-        "marginBottom": 16,
-        "marginTop": 16,
-      }
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
     }
   >
     <View
@@ -868,18 +919,22 @@ exports[`should trigger onDialogFinish renders correctly with long texts 1`] = `
 exports[`should trigger onDialogFinish renders correctly without optional props 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "height": "40%",
-      "width": "70%",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
   }
 >
   <View
     style={
-      Object {
-        "zIndex": 1,
-      }
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
     }
   >
     <View
@@ -955,15 +1010,20 @@ exports[`should trigger onDialogFinish renders correctly without optional props 
   </View>
   <View
     style={
-      Object {
-        "backgroundColor": "#fff",
-        "borderRadius": 20,
-        "height": "100%",
-        "marginTop": -16,
-        "overflow": "hidden",
-        "padding": 32,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
     }
   >
     <Text
@@ -971,32 +1031,33 @@ exports[`should trigger onDialogFinish renders correctly without optional props 
       numberOfLines={3}
       onTextLayout={[Function]}
       style={
-        Object {
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "marginBottom": 12,
-          "marginTop": 12,
-          "minHeight": "30%",
-        }
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
       }
     >
       Lorem ipsum dolor sit amet
     </Text>
     <Image
+      active={
+        Object {
+          "name": "Person 1",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
       resizeMode="contain"
       style={
         Array [
           Object {
+            "alignSelf": "flex-end",
             "height": "100%",
             "width": 96,
-          },
-          Object {
-            "alignSelf": "flex-end",
-            "transform": Array [
-              Object {
-                "scaleX": 1,
-              },
-            ],
           },
         ]
       }
@@ -1004,10 +1065,12 @@ exports[`should trigger onDialogFinish renders correctly without optional props 
   </View>
   <View
     style={
-      Object {
-        "marginBottom": 16,
-        "marginTop": 16,
-      }
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
     }
   >
     <View
