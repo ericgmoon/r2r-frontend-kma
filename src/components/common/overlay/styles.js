@@ -5,7 +5,7 @@ export default styled(Overlay).attrs(() => ({
   overlayStyle: {
     borderRadius: 20,
     padding: 20,
-    background: "#fafafa",
+    backgroundColor: "#fafafa",
     width: "80%",
   },
 }))([]);

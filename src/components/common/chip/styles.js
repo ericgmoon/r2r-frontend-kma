@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import { Button } from "react-native-elements";
 
-export default styled(Button).attrs(({ active }) => ({
+export default styled(Button).attrs(({ active, activeColor, chipStyle }) => ({
   buttonStyle: {
     borderRadius: 36,
     paddingTop: 8,
@@ -9,7 +9,8 @@ export default styled(Button).attrs(({ active }) => ({
     paddingLeft: 12,
     paddingRight: 12,
     textTransform: "uppercase",
-    backgroundColor: active ? "#DF6A6A" : `#ECECEC`,
+    backgroundColor: active ? activeColor : `#ECECEC`,
+    ...chipStyle,
   },
   titleStyle: {
     fontSize: 12,
