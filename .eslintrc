@@ -14,7 +14,13 @@
     "react/jsx-props-no-spreading": "off",
     // TODO: Enable prop type warnings and address them properly
     "react/prop-types": "off",
-    "dot-notation": "off"
+    "dot-notation": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["storybook/**", "**/*.stories.js"]
+      }
+    ]
   },
   "plugins": ["prettier", "jest", "import"],
   "settings": {
@@ -23,7 +29,6 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"],
         "map": [
           ["@r2r/assets", "./src/assets"],
-          ["@r2r/components", "./src/components"],
           ["@r2r/common", "./src/components/common"],
           ["@r2r/composites", "./src/components/composites"],
           ["@r2r/scenes", "./src/scenes"]

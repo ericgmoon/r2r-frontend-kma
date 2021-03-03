@@ -14,7 +14,6 @@ module.exports = (api) => {
           extensions: [".js", "jsx"],
           alias: {
             "@r2r/assets": "./src/assets",
-            "@r2r/components": "./src/components",
             "@r2r/common": "./src/components/common",
             "@r2r/composites": "./src/components/composites",
             "@r2r/scenes": "./src/scenes",

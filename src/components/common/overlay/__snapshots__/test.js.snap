@@ -637,6 +637,7 @@ exports[`renders correctly with custom button 1`] = `
                   "opacity": 1,
                 }
               }
+              testID="mainOverlayButton"
             >
               <View
                 style={

@@ -1,38 +1,48 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import { mount } from "enzyme";
+import sinon from "sinon";
 import Overlay from "./index";
 import Button from "../button";
 
-// Use of mount() requires PR 17 to be merged in first.
-// TODO: Uncomment & fix
-// test("should trigger onClosePress", () => {
-//   const callback = sinon.spy();
-//   const node = mount(
-//     <Overlay className="overlay" isVisible showClose onClose={callback}>
-//       Some text
-//     </Overlay>
-//   );
-//   expect(node.find(".overlay")).toBeDefined();
-//   node.find(".overlay").find(Icon).props().onPress();
-//   sinon.assert.called(callback);
-// });
+test("should trigger onClosePress", () => {
+  const callback = sinon.spy();
+  const node = mount(
+    <Overlay className="overlay" isVisible showClose onClose={callback}>
+      Some text
+    </Overlay>
+  );
+  expect(node.find(".overlay")).toBeDefined();
+  node
+    .find(".overlay")
+    .findWhere((n) => n.prop("testID") === "closeButton")
+    .first()
+    .props()
+    .onPress();
+  sinon.assert.called(callback);
+});
 
-// test("should trigger onPress for main button", () => {
-//   const callback = sinon.spy();
-//   const node = shallow(
-//     <Overlay
-//       className="overlay"
-//       isVisible
-//       button="Press Me"
-//       buttonProps={{ onPress: callback }}
-//     >
-//       button
-//     </Overlay>
-//   );
-//   expect(node.find(".overlay")).toBeDefined();
-//   node.find(".overlay").find(Button).simulate("press");
-//   sinon.assert.called(callback);
-// });
+test("should trigger onPress for main button", () => {
+  const callback = sinon.spy();
+  const node = mount(
+    <Overlay
+      className="overlay"
+      isVisible
+      buttonLabel="Press Me"
+      buttonProps={{ onPress: callback }}
+    >
+      Button
+    </Overlay>
+  );
+  expect(node.find(".overlay")).toBeDefined();
+  node
+    .find(".overlay")
+    .findWhere((n) => n.prop("testID") === "mainOverlayButton")
+    .first()
+    .props()
+    .onPress();
+  sinon.assert.called(callback);
+});
 
 describe("renders correctly", () => {
   test("without props", () => {
