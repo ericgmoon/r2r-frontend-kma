@@ -1,0 +1,1139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should trigger onDialogFinish renders correctly with avatars 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      pointerEvents="none"
+    >
+      <View
+        style={
+          Object {
+            "borderRadius": 36,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            Object {
+              "busy": false,
+              "disabled": false,
+            }
+          }
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#DF6A6A",
+                "borderColor": "#2089dc",
+                "borderRadius": 36,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+                "paddingBottom": 8,
+                "paddingLeft": 48,
+                "paddingRight": 48,
+                "paddingTop": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "paddingVertical": 1,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Person 1
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={3}
+      onTextLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
+      }
+    >
+      Lorem ipsum dolor sit amet
+    </Text>
+    <Image
+      active={
+        Object {
+          "avatar": "sample",
+          "name": "Person 1",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/dev/sample-dialog-avatar.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-end",
+            "height": "100%",
+            "width": 96,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 36,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": false,
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="nextButton"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "#000",
+              "backgroundColor": "black",
+              "borderColor": "black",
+              "borderRadius": 36,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "padding": 8,
+              "paddingBottom": 16,
+              "paddingLeft": 20,
+              "paddingRight": 12,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "paddingVertical": 1,
+                "textAlign": "center",
+              }
+            }
+          >
+            NEXT
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`should trigger onDialogFinish renders correctly with custom buttons 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      pointerEvents="none"
+    >
+      <View
+        style={
+          Object {
+            "borderRadius": 36,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            Object {
+              "busy": false,
+              "disabled": false,
+            }
+          }
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#DF6A6A",
+                "borderColor": "#2089dc",
+                "borderRadius": 36,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+                "paddingBottom": 8,
+                "paddingLeft": 48,
+                "paddingRight": 48,
+                "paddingTop": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "paddingVertical": 1,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Person 1
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={3}
+      onTextLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
+      }
+    >
+      Lorem ipsum dolor sit amet
+    </Text>
+    <Image
+      active={
+        Object {
+          "buttonText": "Continue",
+          "name": "Person 1",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
+      resizeMode="contain"
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-end",
+            "height": "100%",
+            "width": 96,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 36,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": false,
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="nextButton"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "#000",
+              "backgroundColor": "black",
+              "borderColor": "black",
+              "borderRadius": 36,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "padding": 8,
+              "paddingBottom": 16,
+              "paddingLeft": 20,
+              "paddingRight": 12,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "paddingVertical": 1,
+                "textAlign": "center",
+              }
+            }
+          >
+            CONTINUE
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`should trigger onDialogFinish renders correctly with custom name colors 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      pointerEvents="none"
+    >
+      <View
+        style={
+          Object {
+            "borderRadius": 36,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            Object {
+              "busy": false,
+              "disabled": false,
+            }
+          }
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#6abd75",
+                "borderColor": "#2089dc",
+                "borderRadius": 36,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+                "paddingBottom": 8,
+                "paddingLeft": 48,
+                "paddingRight": 48,
+                "paddingTop": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "paddingVertical": 1,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Person 1
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={3}
+      onTextLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
+      }
+    >
+      Lorem ipsum dolor sit amet
+    </Text>
+    <Image
+      active={
+        Object {
+          "name": "Person 1",
+          "nameColor": "#6abd75",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
+      resizeMode="contain"
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-end",
+            "height": "100%",
+            "width": 96,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 36,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": false,
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="nextButton"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "#000",
+              "backgroundColor": "black",
+              "borderColor": "black",
+              "borderRadius": 36,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "padding": 8,
+              "paddingBottom": 16,
+              "paddingLeft": 20,
+              "paddingRight": 12,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "paddingVertical": 1,
+                "textAlign": "center",
+              }
+            }
+          >
+            NEXT
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`should trigger onDialogFinish renders correctly with long texts 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      pointerEvents="none"
+    >
+      <View
+        style={
+          Object {
+            "borderRadius": 36,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            Object {
+              "busy": false,
+              "disabled": false,
+            }
+          }
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#DF6A6A",
+                "borderColor": "#2089dc",
+                "borderRadius": 36,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+                "paddingBottom": 8,
+                "paddingLeft": 48,
+                "paddingRight": 48,
+                "paddingTop": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "paddingVertical": 1,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Person 1
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={3}
+      onTextLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
+      }
+    >
+      Lorem ipsum dolor sit amet
+    </Text>
+    <Image
+      active={
+        Object {
+          "name": "Person 1",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
+      resizeMode="contain"
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-end",
+            "height": "100%",
+            "width": 96,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 36,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": false,
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="nextButton"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "#000",
+              "backgroundColor": "black",
+              "borderColor": "black",
+              "borderRadius": 36,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "padding": 8,
+              "paddingBottom": 16,
+              "paddingLeft": 20,
+              "paddingRight": 12,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "paddingVertical": 1,
+                "textAlign": "center",
+              }
+            }
+          >
+            NEXT
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`should trigger onDialogFinish renders correctly without optional props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": "40%",
+        "width": "70%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "zIndex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      pointerEvents="none"
+    >
+      <View
+        style={
+          Object {
+            "borderRadius": 36,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            Object {
+              "busy": false,
+              "disabled": false,
+            }
+          }
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#DF6A6A",
+                "borderColor": "#2089dc",
+                "borderRadius": 36,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+                "paddingBottom": 8,
+                "paddingLeft": 48,
+                "paddingRight": 48,
+                "paddingTop": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "paddingVertical": 1,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Person 1
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 20,
+          "height": "100%",
+          "marginTop": -16,
+          "overflow": "hidden",
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "paddingRight": 32,
+          "paddingTop": 32,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={3}
+      onTextLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12,
+            "marginTop": 12,
+            "minHeight": "30%",
+          },
+        ]
+      }
+    >
+      Lorem ipsum dolor sit amet
+    </Text>
+    <Image
+      active={
+        Object {
+          "name": "Person 1",
+          "text": "Lorem ipsum dolor sit amet",
+        }
+      }
+      resizeMode="contain"
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-end",
+            "height": "100%",
+            "width": 96,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "marginBottom": 16,
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 36,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": false,
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="nextButton"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "#000",
+              "backgroundColor": "black",
+              "borderColor": "black",
+              "borderRadius": 36,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "padding": 8,
+              "paddingBottom": 16,
+              "paddingLeft": 20,
+              "paddingRight": 12,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "paddingVertical": 1,
+                "textAlign": "center",
+              }
+            }
+          >
+            NEXT
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

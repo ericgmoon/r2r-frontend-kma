@@ -2,12 +2,12 @@ import React from "react";
 import renderer from "react-test-renderer";
 import sinon from "sinon";
 import { shallow } from "enzyme";
-import { Button as EButton } from "react-native-elements";
+import StyledButton from "./styles";
 import Button from "./index";
 
 test("should capitalise text", () => {
   const node = shallow(<Button>button</Button>);
-  expect(node.find(EButton).prop("title")).toEqual("BUTTON");
+  expect(node.find(StyledButton).prop("title")).toEqual("BUTTON");
 });
 
 test("should trigger onPress", () => {
