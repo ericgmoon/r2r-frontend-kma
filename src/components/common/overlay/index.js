@@ -32,6 +32,7 @@ export default function Overlay({
                 color="black"
                 size={24}
                 onPress={onClose}
+                testID="closeButton"
                 type="material"
               />
             ) : null}
@@ -39,7 +40,11 @@ export default function Overlay({
         </TitleContainer>
         <ChildrenContainer>{children}</ChildrenContainer>
         <ButtonContainer>
-          {buttonLabel ? <Button {...buttonProps}>{buttonLabel}</Button> : null}
+          {buttonLabel ? (
+            <Button testID="mainOverlayButton" {...buttonProps}>
+              {buttonLabel}
+            </Button>
+          ) : null}
         </ButtonContainer>
       </Container>
     </StyledOverlay>
