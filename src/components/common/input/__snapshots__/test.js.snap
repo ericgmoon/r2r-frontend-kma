@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with custom styles 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 10,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 2,
+        "borderColor": "#000",
+        "borderRadius": 10,
+        "borderStyle": "solid",
+        "borderWidth": 2,
+        "flexDirection": "row",
+        "paddingButton": 32,
+        "paddingTop": 32,
+        "transform": Array [
+          Object {
+            "translateX": 0,
+          },
+        ],
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      placeholderTextColor="#86939e"
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#242424",
+          "flex": 1,
+          "fontSize": 32,
+          "fontWeight": "bold",
+          "minHeight": 40,
+          "padding": 12,
+        }
+      }
+      testID="RNE__Input__text-input"
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#ff190c",
+        "fontSize": 12,
+        "margin": 5,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`renders correctly without props 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 10,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 2,
+        "borderColor": "#000",
+        "borderRadius": 10,
+        "borderStyle": "solid",
+        "borderWidth": 2,
+        "flexDirection": "row",
+        "transform": Array [
+          Object {
+            "translateX": 0,
+          },
+        ],
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      placeholderTextColor="#86939e"
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#242424",
+          "flex": 1,
+          "fontSize": 32,
+          "fontWeight": "bold",
+          "minHeight": 40,
+          "padding": 12,
+        }
+      }
+      testID="RNE__Input__text-input"
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#ff190c",
+        "fontSize": 12,
+        "margin": 5,
+      }
+    }
+  />
+</View>
+`;

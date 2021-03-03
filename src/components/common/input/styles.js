@@ -1,18 +1,21 @@
 export const inputStyle = {
-  borderRadius: "11px",
-  padding: "12px",
+  padding: 12,
+  fontWeight: "bold",
+  fontSize: 32,
 };
 
-export const iconStyle = {
-  paddingLeft: "16px",
-};
-
-export const containerStyle = {
+// Note: borderWidth doesn't control borderBottom
+export const inputContainerStyle = {
+  borderStyle: "solid",
   borderColor: "#000",
-  color: "#000",
+  borderRadius: 10,
+  borderWidth: 2,
+  borderBottomWidth: 2,
+  width: "100%",
 };
 
 export const labelStyle = {
-  paddingBottom: "4px",
-  fontSize: "14px",
+  paddingLeft: 16,
+  paddingBottom: 4,
+  fontSize: 24,
 };
