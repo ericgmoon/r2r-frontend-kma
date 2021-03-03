@@ -16,20 +16,19 @@ storiesOf("Overlay", module).add("Overlay", () => {
           setOpen(true);
         }}
       />
-      {open && (
-        <Overlay
-          title={text("Overlay Title", "Default Title")}
-          showClose
-          onClose={() => {
-            action("onClose");
-            setOpen(false);
-          }}
-          buttonLabel="Button"
-          buttonProps={{ icon: "send" }}
-        >
-          <Text>I am the children</Text>
-        </Overlay>
-      )}
+      <Overlay
+        title={text("Overlay Title", "Default Title")}
+        showClose
+        onClose={() => {
+          action("onClose");
+          setOpen(false);
+        }}
+        buttonLabel="Button"
+        buttonProps={{ icon: "send" }}
+        isVisible={open}
+      >
+        <Text>I am the children</Text>
+      </Overlay>
     </View>
   );
 });

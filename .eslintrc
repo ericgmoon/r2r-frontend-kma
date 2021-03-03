@@ -14,7 +14,13 @@
     "react/jsx-props-no-spreading": "off",
     // TODO: Enable prop type warnings and address them properly
     "react/prop-types": "off",
-    "dot-notation": "off"
+    "dot-notation": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["storybook/**", "**/*.stories.js"]
+      }
+    ]
   },
   "plugins": ["prettier", "jest", "import"],
   "settings": {
