@@ -10,17 +10,6 @@ export default function Input(props) {
       <EInput
         inputStyle={inputStyle}
         containerStyle={containerStyle}
-        iconLeft
-        icon={
-          icon
-            ? {
-                name: icon,
-                size: 24,
-                color: iconColor || "white",
-                type: "material",
-              }
-            : null
-        }
         iconContainerStyle={iconStyle}
         placeholder={placeholder}
         label={label}
